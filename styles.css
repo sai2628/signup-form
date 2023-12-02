@@ -1,0 +1,123 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #bdd0d8;
+    font-family: sans-serif;
+}
+.signupFrm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.loginFrm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form {
+    background-color: white;
+    width: 450px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px;
+}
+.title {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.inputcontainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+::placeholder {
+    color: transparent;
+}
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+    color: #DADCE0;
+}
+.submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 0px;
+}
+.submitBtn:hover {
+    background-color: #9867C5;
+}
+.input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: purple;
+}
+.input:focus {
+    border: 2px solid purple;
+}
+.input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+.member {
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 20px;
+    padding-left: 5px;
+    font-family: sans-serif;
+}
+a:link{
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+}
+/* a:visited {
+    color: deepskyblue;
+    background-color: transparent;
+    text-decoration: none;
+} */
+a:active {
+    color: deepskyblue;
+    background-color: transparent;
+}
+a:hover {
+    color: #9867C5;
+    text-decoration: none;
+    font-weight: none;
+}
+
